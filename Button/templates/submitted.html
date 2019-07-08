@@ -1,0 +1,40 @@
+<html>
+		{% load static %}
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="bilder/Database.ico" />
+		<title>Tweezers</title>
+
+		<link rel="stylesheet" type="text/css" href="{% static 'Button/style.css' %}">
+	</head>
+	
+	<body>
+		<a href="Agile_Baukasten.html">
+			<div class="inner container">
+				<div class="home">
+					Home 
+				</div>
+			</div>
+		</a>
+		<a href="javascript:history.go(-1)">
+			<div class="inner container">
+				<div class="home">
+				<font color="black">Back</font>
+				</div>
+			</div>	
+		</a>
+	<center>
+	<div>
+		<img src="{% static 'Button/bilder/Success.png'%}" width=100% height=auto/>
+	</div>
+   
+    <a href="{% static 'Button/myExportSTL.stl'%}">
+        <input type="button" value="Download .stl"/>
+        
+    </a>
+</center>	
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+		{% load static %}
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="Briefcase.ico" />
+		<title>Baukasten agiler Methoden test</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'Button/style.css' %}">
+		<meta charset="utf-8">
+	
+	<style>
+		ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0065BD;
+    font-family: Helvetica;
+    height: 104.7333px;
+
+		}
+
+		li {
+		    float: left;
+		    /*border-right:1px solid #bbb;*/
+		 border-top: 20px;
+		}
+		
+		li:last-child {
+		    border-right: none;
+		}
+		li:nth-last-child(3) {
+		    border-right: none;
+
+		}
+
+		li a {
+		    display: block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		    height: 26.7333px
+		}
+
+		li a:hover:not(.active) {
+		    background-color: #424242;
+		}
+
+		.active {
+		    background-color: #424242;
+
+		}
+		.active2 {
+		    background-color: #0065BD;
+		    padding-left: 300px;
+		    font-weight: 500;
+		    font-size: 1.4em;
+		    margin-top: 20px;
+
+		}
+		.disabled {
+		  pointer-events: none;  /**<-----------*/
+		}
+		
+	</style>
+	</head>
+	
+	<body>
+		<!--<h1>Baukastens agiler Techniken</h1>-->
+
+		<!--
+		<ul>
+		  
+		  <li style='height: 104.7333px;background-color:#FFFFFF; padding-right:5px;padding-left:5px'>
+			<img style='height: 80%;margin-top: 20px' src="{% static 'Button/bilder/mtows.png'%}"/>
+			
+		  </li> 
+		  <li><h1>3D printed surgical tools</h1></li>
+		  
+		  <li style='height: 104.7333px;background-color:#FFFFFF; padding-right:5px;padding-left:5px;float:right'>
+		    <img style='height: 80%;margin-top: 20px' src="{% static 'Button/bilder/m3dical.png'%}"/>
+
+		  </li> 
+		</a>
+		</ul>
+	-->
+	<div class="wrapper2">
+			<center>	
+				<div>
+					<img style='height: 100px;margin-top: 20px;background-color:#FFFFFF; padding-right:5px;padding-left:5px' src="{% static 'Button/bilder/mtows.png'%}"/>
+					<img style='height: 100px;margin-top: 20px;background-color:#FFFFFF; padding-right:5px;padding-left:5px' src="{% static 'Button/bilder/m3dical.png'%}"/>
+				</div>		
+			</center>
+			<div class="ueberschrift">
+					<h1>3D printed surgical tools</h1>
+			</div>
+
+	</div>
+	
+		
+		  
+		
+
+			
+
+		<center>
+		<table class="tg6">
+
+
+
+			<tr>
+			<td class="enjoy-css" >
+					<a href="{% url 'tweezers' %}">
+				<div class="headerfirstpage">
+				Tweezers
+				</div>
+			
+				<center>
+				<img src="{% static 'Button/bilder/Category_Tweezer.png'%}" width=auto height=200px/>
+				</center>
+			
+			</td>
+
+			<td class="enjoy-css">
+					<a href="{% url 'splints' %}">
+				<div class="headerfirstpage">
+				Finger Splint
+				</div>
+				<center>
+				<img src="{% static 'Button/bilder/Category_Splint.png'%}" width=auto height=200px/>
+				</center>
+			</td>
+			<td class="enjoy-css">
+					<a href="{% url 'clips' %}">
+				<div class="headerfirstpage">
+				Clips
+				</div>
+				<center>
+				<img src="{% static 'Button/bilder/Category_Clip.png'%}" width=auto height=200px/>
+				</center>
+			</td>
+			
+		 </tr>
+
+		</table>
+		</center>
+	
+		
+
+
+	</body>
+</html>

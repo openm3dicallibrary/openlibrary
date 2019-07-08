@@ -1,0 +1,105 @@
+<html>
+		{% load static %}
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="bilder/Database.ico" />
+		<title>Finger Splints</title>
+
+		<link rel="stylesheet" type="text/css" href="{% static 'Button/style.css' %}">
+	</head>
+	
+	<body>
+		<a href="{% url 'GHC' %}">
+			<div class="inner container">
+				<div class="home">
+					Home
+				</div>
+			</div>
+		</a
+		>
+		<a href="javascript:history.go(-1)">
+			<div class="inner container">
+				<div class="home">
+				<font color="black">Back</font>
+				</div>
+			</div>	
+		</a>
+
+		<div class="wrapper2">
+				<center>	
+					<div>
+						
+						<img style='height: 100px;margin-top: 20px;background-color:#FFFFFF; padding-right:5px;padding-left:5px' src="{% static 'Button/bilder/m3dical.png'%}"/>
+					</div>		
+				</center>
+				
+	
+		</div>
+		
+	<table class="tg4">
+		<tr>
+    		<td class="tg4-031e" colspan="4">
+				<div class="table_sheet">
+				<div class="sheet_headline">
+					<a>
+						Short Description
+					</a>
+				</div>
+			<a class="sheet_">
+                ----
+			</a>
+
+			</td>
+		</tr>
+  <tr>
+    <th class="tg4-031e" colspan="2">
+		<div class="table_sheet">
+			
+			<div class="sheet_headline">
+				<a>
+					Dimensions
+				</a>
+			</div>		
+				<img src="{% static 'Button/bilder/splint.png'%}" width=100% height=auto/>
+			
+			</div>
+		
+	</th>
+    <th class="tg4-031e" colspan="2">
+		<div class="table_sheet">
+			
+			<div class="sheet_headline">
+				<a>
+					Define your dimensions
+				</a>
+			</div>
+			<div style="margin-top: 25px">
+				All Dimensions are in [mm]
+				
+			</div>
+			<div style='padding-top: 50px'>
+			
+				<form action="/submitted2/" method="post">
+					{% csrf_token%}
+		
+					<table>
+						{{form.as_table}}
+					
+					 </table>
+					  <input type="submit" value="Submit">
+				</form>
+			
+				
+			
+			</div>
+
+
+
+		</div>	
+	</th>
+  </tr>
+
+ 
+</table>
+
+	</body>
+</html>
